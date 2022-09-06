@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ticketapp/screens/welcome_page.dart';
+import 'package:ticketapp/utils/app_style.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -39,7 +40,7 @@ class _HomeState extends State<Home> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(

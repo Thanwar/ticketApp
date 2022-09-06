@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_style.dart';
+
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.bgColor,
       body: ListView(
         children: [
           Container(
             padding: EdgeInsets.all(20),
             child: Column(
               children: [
+                SizedBox(height: 40,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text("Welcome"),
-                          Text("Book Tickets"),
+                        children: [
+                          Text("Welcome", style: Styles.headLineStyle3,),
+                          SizedBox(height:5,),
+                          Text("Book Tickets", style: Styles.headLineStyle1,),
                         ],
                       ),
                     ),
